@@ -1,0 +1,473 @@
+# 🤖 Agent IA Universel - .gitignore
+
+# =============================================================================
+# 🐍 Python
+# =============================================================================
+
+# Environnements virtuels
+venv/
+env/
+.venv/
+.env/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# =============================================================================
+# 🧠 IA & Machine Learning
+# =============================================================================
+
+# Bases vectorielles (ChromaDB, Chroma, etc.)
+chroma_db/
+enhanced_chroma_db/
+universal_chroma_db/
+vector_db/
+*.db
+*.sqlite
+*.sqlite3
+
+# Modèles entraînés et checkpoints
+models/
+checkpoints/
+*.pth
+*.pt
+*.pkl
+*.pickle
+*.joblib
+*.model
+*.h5
+*.onnx
+fine_tuned_models/
+hexagonal-expert/
+
+# Données d'entraînement volumineuses
+training_data/
+datasets/
+data/
+*.csv
+*.jsonl
+*.parquet
+*.arrow
+
+# Cache des modèles Hugging Face
+.cache/
+transformers_cache/
+sentence_transformers_cache/
+
+# Ollama (si installé localement)
+.ollama/
+
+# =============================================================================
+# 📊 Données et Configurations
+# =============================================================================
+
+# Fichiers de données générés
+hexagonal_training_data.json
+hexagonal_expert_report.json
+knowledge_graph.pkl
+project_metadata.json
+analysis_results.json
+
+# Configurations sensibles
+.env
+.env.local
+.env.production
+config.local.yaml
+secrets.yaml
+api_keys.txt
+
+# Logs
+logs/
+*.log
+log.txt
+debug.log
+error.log
+
+# Fichiers temporaires
+temp/
+tmp/
+*.tmp
+*.temp
+.temp/
+
+# =============================================================================
+# 🌐 Interface Web (Streamlit)
+# =============================================================================
+
+# Cache Streamlit
+.streamlit/
+streamlit_cache/
+
+# Uploads utilisateur
+uploads/
+user_files/
+uploaded_projects/
+
+# =============================================================================
+# 💻 IDE et Éditeurs
+# =============================================================================
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =============================================================================
+# 🖥️ Système
+# =============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# =============================================================================
+# 📁 Projets analysés (exemples)
+# =============================================================================
+
+# Éviter d'inclure des projets entiers par accident
+test_projects/
+sample_projects/
+example_projects/
+projects_to_analyze/
+
+# =============================================================================
+# 🔧 Build et Déploiement
+# =============================================================================
+
+# Docker
+.dockerignore
+Dockerfile.local
+docker-compose.override.yml
+
+# Output de build
+output/
+generated_code/
+exports/
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# =============================================================================
+# 📈 Métriques et Rapports
+# =============================================================================
+
+# Rapports générés
+reports/
+metrics/
+analysis_output/
+*.html
+*.pdf
+
+# Graphiques générés
+architecture_graph.png
+dependency_graph.png
+metrics_chart.png
+plots/
+visualizations/
+
+# =============================================================================
+# 🧪 Tests
+# =============================================================================
+
+# Résultats de tests
+test_results/
+test_output/
+.coverage.*
+coverage_html/
+
+# Fichiers de test temporaires
+test_*.py.bak
+*_test_backup.*
+
+# =============================================================================
+# 🌍 Variables d'environnement et secrets
+# =============================================================================
+
+# API Keys et tokens
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+credentials/
+auth.json
+
+# Configuration locale
+local_config.py
+local_settings.py
+development.yaml
+production.yaml
+
+# =============================================================================
+# 📦 Package managers
+# =============================================================================
+
+# npm (si utilisé pour des outils)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# =============================================================================
+# 🎯 Spécifique au projet
+# =============================================================================
+
+# Indexation en cours
+.indexing/
+indexing_progress.json
+
+# Cache d'analyse
+.analysis_cache/
+project_cache/
+
+# Conversations sauvegardées
+conversations/
+chat_history/
+session_*.json
+
+# Exemples de code générés (pour éviter la pollution)
+generated_examples/
+code_samples/
+test_generated/
+
+# =============================================================================
+# 🔍 Debugging et profiling
+# =============================================================================
+
+# Profiling
+*.prof
+*.pstats
+profile_results/
+
+# Memory dumps
+*.mem
+*.dump
+
+# Traceback files
+traceback_*.txt
+
+# =============================================================================
+# 📋 Notes personnelles
+# =============================================================================
+
+# Notes de développement
+NOTES.md
+TODO.md
+ROADMAP.personal.md
+.personal/
+scratch/
+notes/
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# =============================================================================
+# 🚀 Déploiement
+# =============================================================================
+
+# Kubernetes
+*.yaml.local
+k8s-local/
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Ansible
+*.retry
+
+# =============================================================================
+# 📊 Monitoring
+# =============================================================================
+
+# Métriques de performance
+performance_logs/
+metrics.json
+stats/
+monitoring/
+
+# =============================================================================
+# 🎨 Assets temporaires
+# =============================================================================
+
+# Images temporaires
+temp_images/
+*.tmp.png
+*.tmp.jpg
+*.tmp.svg
+
+# CSS/JS compilés (si applicable)
+dist/
+static/build/
+
+# =============================================================================
+# 🔒 Sécurité
+# =============================================================================
+
+# Certificats
+*.crt
+*.cert
+*.ca-bundle
+*.p7b
+*.p7s
+*.der
+
+# Clés SSH (au cas où)
+id_rsa
+id_rsa.pub
+known_hosts
+
+# =============================================================================
+# 📝 Documentation générée
+# =============================================================================
+
+# Sphinx documentation
+docs/_build/
+site/
+
+# MkDocs
+site/
+
+# =============================================================================
+# 🏷️ Tags et releases
+# =============================================================================
+
+# Version files
+VERSION
+.version
+version.txt
+
+# Release artifacts
+releases/
+artifacts/
+
+# =============================================================================
+# 🎪 Divers
+# =============================================================================
+
+# Fichiers corrompus ou partiels
+*.partial
+*.crdownload
+*.tmp
+
+# Fichiers de verrouillage
+*.lock
+.lock
+
+# Fichiers de sauvegarde automatique
+.#*
+#*#
+
+# Fichiers cachés génériques
+.*
+!.gitignore
+!.gitkeep
+!.github/
+!.vscode/settings.json.example
+!.env.example
